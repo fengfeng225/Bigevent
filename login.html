@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>大事件-登录/注册</title>
+    <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="assets/lib/bootstrap.css">
+    <link rel="stylesheet" href="assets/lib/fonts/iconfont.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="assets/lib/jquery.js"></script>
 </head>
+
 <body>
-    
+    <div class="layui-main">
+        <img src="assets/images/logo.png" alt="">
+    </div>
+    <div class="loginAndRegBox">
+        <div class="title-box"></div>
+        <!-- 登录模块 -->
+        <div class="login-box">
+            <!-- 登录表单 -->
+            <form class="form-horizontal">
+                <!-- 登录名 -->
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <i class="iconfont icon-dengluyonghu"></i>
+                        <input type="text" name="username" required class="form-control"
+                             placeholder="请输入用户名">
+                    </div>
+                </div>
+                <!-- 登录密码 -->
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <i class="iconfont icon-mimasuo" style="font-size: 16px;"></i>
+                        <input type="password" name="password" required class="form-control" id="inputPassword1" placeholder="请输入密码">
+                        <i class="iconfont icon-cuohao login-pwd"></i>
+                    </div>
+                </div>
+                <!-- 记住用户 -->
+                <!-- <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-12">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 登录按钮 -->
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-default btn-block btn-info">登录</button>
+                    </div>
+                </div>
+                <div class="form-group links" style="margin: 0;">
+                    <a href="javascript:;" id="link_reg">去注册账号</a>
+                </div>
+            </form>
+        </div>
+        <!-- 注册模块 -->
+        <div class="reg-box">
+            <!-- 注册表单 -->
+            <form class="form-horizontal">
+                <!-- 注册用户名 -->
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <i class="iconfont icon-dengluyonghu"></i>
+                        <input type="text" name="username" required class="form-control" placeholder="请输入用户名">
+                    </div>
+                </div>
+                <!-- 注册用户密码 -->
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <i class="iconfont icon-mimasuo" style="font-size: 16px;"></i>
+                        <input type="password" name="password" required class="form-control" id="inputPassword2" placeholder="请输入密码">
+                        <i class="iconfont icon-cuohao reg-pwd"></i>
+                    </div>
+                </div>
+                <!-- 验证密码 -->
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <i class="iconfont icon-mimasuo" style="font-size: 16px;"></i>
+                        <input type="password" name="repassword" required class="form-control" id="inputPassword3" placeholder="再次确认密码">
+                        <i class="iconfont icon-cuohao reg-repwd"></i>
+                    </div>
+                </div>
+
+                <!-- 注册按钮 -->
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-default btn-block btn-info">登录</button>
+                    </div>
+                </div>
+                <div class="form-group links" style="margin: 0;">
+                    <a href="javascript:;" id="link_login">去登录</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/baseAPI.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
+
 </html>

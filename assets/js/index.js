@@ -29,7 +29,6 @@ function getUserInfo() {
             if (res.status !== 0) {
                 return layui.layer.msg('获取用户信息失败')
             }
-            console.log(res);
             renderAvatar(res.data)
         },
         // //没有登录的用户若访问首页，强制跳转回登录页面
@@ -42,6 +41,7 @@ function getUserInfo() {
     })
 }
 
+//渲染用户的头像和昵称
 function renderAvatar(user) {
     let name = user.nickname || user.username
     $("#welcome").html('欢迎&nbsp;' + name)
